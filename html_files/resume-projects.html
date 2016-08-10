@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Yihan Wang | Software Developer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Personal website">
+	<meta name="author" content="Yihan Wang">
+	<meta name="keywords" content="Yihan Wang, Jane Wang, cs dd">
+	<!-- CSS -->
+	<link type="text/css" rel="stylesheet" href="../stylesheet.css">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<!-- JS -->
+	<script src="../script.js"></script>
+</head>
+
+<body>
+<!-- Nav Bar Top -->
+<nav class="navbar navbar-inverse navbar-fixed-top"><!--style="opacity:0.85;"-->
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="glyphicon glyphicon-menu-hamburger" style="color:white;"></span>
+			</button>
+			<a class="navbar-brand" href="../index.html">Yihan Wang | Software Developer</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="../index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+				</li>
+				<li class="dropdown active">
+					<a href="#" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-list-alt"></span>Resume<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="resume-education.html">Education</a></li>
+						<li><a href="resume-workExperience.html">Work Experience</a></li>
+						<li class="current"><a href="resume-projects.html">Projects & Skills</a></li>
+						<li><a href="resume-awards.html">Awards</a></li>
+						<li><a href="resume-interests.html">Interests</a></li>
+					</ul>
+				</li>
+				<li><a href="gallery.html"><span class="glyphicon glyphicon-picture"></span>Gallery</a></li>
+				<li><a href="contactMe.html"><span class="glyphicon glyphicon-envelope"></span>Contact Me</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- Resume -->
+<section class="resume-projects container">
+	<div class="row">
+		<!-- Side Nav -->
+		<div class="sidenav col-xs-2">
+			<ul class="sidenav-content">
+				<li><a href="resume-education.html">Education</a></li>
+				<li><a href="resume-workExperience.html">Work Experience</a></li>
+				<li class="active"><a href="resume-projects.html">Projects & Skills</a></li>
+				<li><a href="resume-awards.html">Awards</a></li>
+				<li><a href="resume-interests.html">Interests</a></li>
+			</ul>
+		</div>
+		<div class="projects col-xs-10">
+			<!-- Projects -->
+			<div class ="panel-group" id="accordion">
+				<!-- Java-->
+				<div class="panel panel-default">
+					<div class="panel-heading" id="java-heading">
+						<a data-toggle="collapse" data-parent="#accordion" href="#java">
+							<h4 class="panel-title">Java<span class="glyphicon glyphicon-minus"></span></h4>
+						</a>
+					</div>
+					<div class="panel-collapse collapse in" id="java">
+						<div class="panel-body" style="height: 270px;">
+							<img src="../img/java_logo.png"/>
+							<ul>
+								<li>Loop, recursion, array, graphics, I/O operations, search&sort</li>
+								<li>Object, method, class, inheritance, polymorphism, encapsulation, abstraction</li>
+								<br>
+								<li><b>Project: </b>Black Jack card game
+									<a href="https://github.com/yihanw" target="_blank"><button class="btn btn-info">Click Me</button></a>
+									<ul style="width: 700px;">
+										<li>Used Loops, Strings, Array, Decision making structures, Files and I/O Operation to build the program</li>
+										<li>Used Vector data structure to trace and display the cards and allowed interactions between users</li>
+										<li>Provided programming documentation such as IPO chart and Flowchart</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- C/C++-->
+				<div class="panel panel-default">
+					<div class="panel-heading" id="c-heading">
+						<a data-toggle="collapse" data-parent="#accordion" href="#c">
+							<h4 class="panel-title">C & C++<span class="glyphicon glyphicon-plus"></span></h4>
+						</a>
+					</div>
+					<div class="panel-collapse collapse" id="c">
+						<div class="panel-body" style="height: 255px;">
+							<img src="../img/c_logo.jpg"/>
+							<ul>
+								<li>Modularization, recusion, loop, pointer, I/O operation, array</li>
+								<li>Dynamic memory, efficiency (Big O Arithmetic), linked data structure</li>
+								<li><b>ADT: </b>stack, queue, sequence, dictionary</li>
+								<br>
+								<li style="width: 800px;"><b>Project: </b>Sequence ADT
+									<a href="https://github.com/yihanw" target="_blank"><button class="btn btn-info">Click Me</button></a>
+									<ul>
+										<li>Used Structure, Assertion, Loops, Pointers and Decision making structures to implement the program</li>
+										<li>Provided comprehensive test cases to test the functionality of the program</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- C#-->
+				<div class="panel panel-default">
+					<div class="panel-heading" id="cs-heading">
+						<a data-toggle="collapse" data-parent="#accordion" href="#cs">
+							<h4 class="panel-title">C#<span class="glyphicon glyphicon-plus"></span></h4>
+						</a>
+					</div>
+					<div class="panel-collapse collapse" id="cs">
+						<div class="panel-body">
+							<img src="../img/cs_logo.png"/>
+							<ul>
+								<li>Used to create and migrate automation test script using Specflow</li>
+								<li>Variables, pointer, type conversion</li>
+								<li>Decision making, string, array, loop, structure, object</li>
+								<li>Namespace, class, method, inheritance, encapsulation, polymorphism </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Dr. Racket-->
+				<div class="panel panel-default">
+					<div class="panel-heading" id="racket-heading">
+						<a data-toggle="collapse" data-parent="#accordion" href="#racket">
+							<h4 class="panel-title">Dr. Racket<span class="glyphicon glyphicon-plus"></span></h4>
+						</a>
+					</div>
+					<div class="panel-collapse collapse" id="racket">
+						<div class="panel-body" style="height:255px;">
+							<img src="../img/racket_logo.png"/>
+							<ul>
+								<li>Functional programming language</li>
+								<li>Structure, list, soring, tree, functional abstraction, graph, testing</li>
+								<li>Recursion: structural, acculative and generative</li>
+								<br>
+								<li><b>Project:</b> UWaterloo API Tools
+									<a href="https://github.com/yihanw" target="_blank"><button class="btn btn-info">Click Me</button></a>
+									<ul style="width: 700px;">
+										<li>Designed an interface that can precisely extract dynamic information from UW API</li>
+										<li>Implemented functions using String, Nested lists, Abstract list functions and Local definitions</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- HTML&CSS-->
+				<div class="panel panel-default">
+					<div class="panel-heading" id="html-heading">
+						<a data-toggle="collapse" data-parent="#accordion" href="#html">
+							<h4 class="panel-title">HTML & CSS / Sass<span class="glyphicon glyphicon-plus"></span></h4>
+						</a>
+					</div>
+					<div class="panel-collapse collapse" id="html">
+						<div class="panel-body">
+							<img src="../img/html_logo.svg"/>
+							<ul>
+								<li>Web development languages</li>
+								<li><b>HTML:</b> Formatting, link, image, list, class / id</li>
+								<li><b>CSS:</b> Colour/gradient, background, box model, display, position, pseudo-class / element</li>
+								<li><b>Sass:</b> Nested selectors / prooperties, variables, imports, mixins</li>
+								<li><b>API:</b> Google Map
+									<a href="resume-education.html"><button class="btn btn-info">Click Me</button></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- JavaScript&JQuery-->
+				<div class="panel panel-default">
+					<div class="panel-heading" id="js-heading">
+						<a data-toggle="collapse" data-parent="#accordion" href="#js">
+							<h4 class="panel-title">JavaScript & JQuery<span class="glyphicon glyphicon-plus"></span></h4>
+						</a>
+					</div>
+					<div class="panel-collapse collapse" id="js">
+						<div class="panel-body">
+							<img src="../img/js_logo.png"/>
+							<ul>
+								<li>Web development languages, JS library</li>
+								<li>This website is written in JavaScript & JQuery</li>
+								<li><b>JQuery effects:</b> Hide/show, fade, slide and animate</li>
+								<li><b>JQuery HTML:</b> add/remove class, css
+									<a href="resume-awards.html"><button class="btn btn-info">Click Me</button></a>
+								</li>
+								<li><b>JQuery Traversing:</b> Ancestors, descendants and siblings</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Bootstrap-->
+				<div class="panel panel-default">
+					<div class="panel-heading" id="bootstrap-heading">
+						<a data-toggle="collapse" data-parent="#accordion" href="#bootstrap">
+							<h4 class="panel-title">Bootstrap<span class="glyphicon glyphicon-plus"></span></h4>
+						</a>
+					</div>
+					<div class="panel-collapse collapse" id="bootstrap">
+						<div class="panel-body">
+							<img src="../img/bootstrap_logo.png"/>
+							<ul>
+								<li>Web development Framework for building website</li>
+								<li>Structured this website using <b>Grid System</b></li>
+								<li>Used <b>Button groups & Popover</b> to build the course section on Education page
+									<a href="resume-education.html"><button class="btn btn-info">Click Me</button></a>
+								</li>
+								<li>Used <b>Accordion </b>to build collapsible list group on Project page</li>
+								<li>Used <b>Carousel</b> to build Gallery page</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- SQL-->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a data-toggle="collapse" data-parent="#accordion" href="#sql">
+							<h4 class="panel-title">SQL<span class="glyphicon glyphicon-plus"></span></h4>
+						</a>
+					</div>
+					<div class="panel-collapse collapse" id="sql">
+						<div class="panel-body">
+							<img src="../img/sql_logo.png"/>
+							<ul>
+								<li>Relational database language</li>
+								<li>Used to access and manipulate databse during work</li>
+								<li>Create table, select, insert, delete, update</li>
+								<li>Injection, like, in, between, constraints, unique</li>
+								<li>Joins(inner, left, right, full), union, functions</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Python-->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<a data-toggle="collapse" data-parent="#accordion" href="#python">
+							<h4 class="panel-title">Python<span class="glyphicon glyphicon-plus"></span></h4>
+						</a>
+					</div>
+					<div class="panel-collapse collapse" id="python">
+						<div class="panel-body">
+							<img src="../img/python_logo.png"/>
+							<ul>
+								<li>Decision making, loop, string, list, tuple, I/O operation</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Tools -->
+			<div class="tool">
+				<h4>Tools</h4>
+				<table>
+					<tr>
+						<td><img src="../img/visual_studio_logo.png"/><a href="https://www.visualstudio.com/" target="_blank"/>Visual Studio</td>
+						<td><img src="../img/test_manager_logo.png"/><a href="https://msdn.microsoft.com/en-us/library/jj635157.aspx" target="_blank"/>Test Manager</td>
+						<td><img src="../img/specflow_logo.png"/><a href="http://www.specflow.org/" target="_blank"/>Specflow</td>
+					</tr>
+					<tr>
+						<td><img src="../img/git_logo.png"/><a href="https://git-scm.com" target="_blank"/>Git</td>
+						<td><img src="../img/mssql_logo.png"/><a href="https://www.microsoft.com/en/server-cloud/products/sql-server/default.aspx" target="_blank"/>MS SQL relational database</td>
+						<td><img src="../img/tomcat_logo.jpg"/><a href="http://tomcat.apache.org/" target="_blank"/>Tomcat web server</td>
+					</tr>
+					<tr>
+						<td><img src="../img/terminal_logo.png"/><a href="http://cli.learncodethehardway.org/book/" target="_blank"/>Terminal</td>
+						<td><img src="../img/weblogic_logo.jpg"/><a href="http://www.oracle.com/technetwork/middleware/weblogic/overview/index-085209.html" target="_blank"/>WebLogic web server</td>
+						<td><img src="../img/oracle_logo.png"/><a href="http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index-097090.html" target="_blank"/>Oracle relational database</td>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- footer -->
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-6 info">
+				<p>2016 &copy Yihan Wang</p>
+			</div>
+			<div class="col-xs-6 nav-bottom">
+				<p class="icon-bottom">
+					<a href="../index.html"><span class="glyphicon glyphicon-home"></a>
+					<a href="resume-education.html"><span class="glyphicon glyphicon-list-alt active"></a>
+					<a href="gallery.html"><span class="glyphicon glyphicon-picture"></a>
+					<a href="contactMe.html"><span class="glyphicon glyphicon-envelope"></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
