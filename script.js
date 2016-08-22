@@ -40,11 +40,5 @@ $(document).ready(function(){
 		center: new google.maps.LatLng(43.787133, -79.323335), zoom: 15
 	}
 	var map = new google.maps.Map(mapCanvas, mapOptions);
+	var src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD3v3u1V7FPExnsA8sbgkesVIF5yxB29M0&callback=initMap";
 });
-/*
-#34B3A0
-#219d91
-#204056
-#F65A5B
-hover: rgba(35, 173, 278, 1)
-*/
