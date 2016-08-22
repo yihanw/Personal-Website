@@ -1,0 +1,370 @@
+* {
+  font-family: Helvetica, sans-serif; }
+
+nav.navbar .navbar-nav {
+  padding-right: 15px; }
+  nav.navbar .navbar-nav li .glyphicon {
+    padding-right: 8px; }
+  nav.navbar .navbar-nav li .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.935); }
+    nav.navbar .navbar-nav li .dropdown-menu li.current a {
+      color: white; }
+    nav.navbar .navbar-nav li .dropdown-menu li a {
+      color: #85857a; }
+    nav.navbar .navbar-nav li .dropdown-menu li a:hover {
+      background-color: transparent;
+      color: white; }
+    nav.navbar .navbar-nav li .dropdown-menu li:hover a {
+      color: white; }
+
+footer .container-fluid .row {
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.935);
+  padding-top: 15px;
+  padding-bottom: 10px; }
+  footer .container-fluid .row .info {
+    color: #85857a; }
+  footer .container-fluid .row .nav-bottom .icon-bottom {
+    text-align: right;
+    padding-right: 20px; }
+    footer .container-fluid .row .nav-bottom .icon-bottom a .glyphicon {
+      color: #85857a;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-left: 1px solid #85857a;
+      border-right: 1px solid #85857a; }
+    footer .container-fluid .row .nav-bottom .icon-bottom a .glyphicon.active {
+      color: white; }
+    footer .container-fluid .row .nav-bottom .icon-bottom a .glyphicon:hover {
+      color: white; }
+
+section.home {
+  height: 920px;
+  //margin-top: 50px;
+  background: linear-gradient(to bottom right, rgba(0, 204, 102, 0.5), rgba(0, 89, 179, 0.9));
+  font-weight: 550;
+  opacity: 0.95; }
+  section.home .container .intro {
+    color: white;
+    font-size: 50px;
+    font-weight: 75%;
+    text-align: center;
+    padding-top: 350px;
+    padding-bottom: 50px;
+    display: none; }
+  section.home .container .but-group {
+    text-align: center;
+    display: none; }
+    section.home .container .but-group .section-button {
+      display: inline-block;
+      text-align: center;
+      background: linear-gradient(#ff6666, rgba(255, 102, 102, 0.6));
+      border-radius: 7px;
+      border: none;
+      padding: 20px;
+      width: 250px;
+      margin: 10px;
+      opacity: 0.9;
+      transition: 0.5s; }
+      section.home .container .but-group .section-button .home-but {
+        position: relative;
+        color: white;
+        text-align: center;
+        font-size: 22px;
+        transition: 0.5s; }
+        section.home .container .but-group .section-button .home-but a {
+          text-decoration: none;
+          color: white; }
+      section.home .container .but-group .section-button .home-but:after {
+        content: ">>";
+        position: absolute;
+        opacity: 0;
+        right: -20px;
+        transition: 0.3s; }
+    section.home .container .but-group .section-button:hover .home-but {
+      padding-right: 20px; }
+    section.home .container .but-group .section-button:hover .home-but:after {
+      opacity: 1; }
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%; }
+  .sidenav .sidenav-content {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; }
+    .sidenav .sidenav-content li {
+      padding: 12px 0;
+      font-size: 15px;
+      border-radius: 2px; }
+      .sidenav .sidenav-content li a {
+        color: black;
+        text-decoration: none; }
+    .sidenav .sidenav-content li.active {
+      background-color: #47d1d1;
+      opacity: 0.8; }
+    .sidenav .sidenav-content li:hover {
+      background-color: #47d1d1;
+      opacity: 0.8;
+      transition: 0.5s; }
+
+section.resume-education {
+  margin-top: 50px; }
+  section.resume-education .row {
+    height: 1000px; }
+    section.resume-education .row .education {
+      padding-left: 50px;
+      padding-top: 30px; }
+      section.resume-education .row .education .waterloo div.top {
+        position: relative;
+        width: 100%;
+        height: 200px; }
+        section.resume-education .row .education .waterloo div.top a {
+          position: absolute; }
+        section.resume-education .row .education .waterloo div.top ul.uw-info {
+          position: absolute;
+          margin-left: 250px;
+          margin-top: 50px;
+          font-size: 16px; }
+          section.resume-education .row .education .waterloo div.top ul.uw-info li {
+            padding: 5px 0px; }
+      section.resume-education .row .education .waterloo .course {
+        height: 250px; }
+        section.resume-education .row .education .waterloo .course .uw-course a {
+          width: 60px; }
+        section.resume-education .row .education .waterloo .course .uw-course .popover {
+          z-index: 1; }
+        section.resume-education .row .education .waterloo .course .uw-course .popover-title {
+          text-align: center; }
+        section.resume-education .row .education .waterloo .course .uw-course .popover-content {
+          padding-top: 5px 0; }
+      section.resume-education .row .education .mac {
+        margin-top: 50px;
+        position: relative;
+        width: 100%;
+        height: 400px; }
+        section.resume-education .row .education .mac a {
+          position: absolute;
+          margin-left: 50px;
+          margin-top: 30px; }
+        section.resume-education .row .education .mac ul.mac-info {
+          position: absolute;
+          margin-left: 230px;
+          margin-top: 50px;
+          font-size: 16px; }
+          section.resume-education .row .education .mac ul.mac-info li {
+            padding: 5px 0; }
+        section.resume-education .row .education .mac #map {
+          position: absolute;
+          height: 300px;
+          width: 300px;
+          margin-left: 550px; }
+          
+section.resume-workExperience {
+   margin-top: 50px; }
+   section.resume-workExperience .row {
+     height: 870px; }
+     section.resume-workExperience .row .workExperience {
+       padding-left: 50px;
+       padding-top: 30px; }
+       section.resume-workExperience .row .workExperience .ihs {
+         position: relative;
+         width: 100%;
+         height: 350px; }
+         section.resume-workExperience .row .workExperience .ihs a {
+           position: absolute;
+           margin-left: 50px;
+           margin-top: 30px; }
+         section.resume-workExperience .row .workExperience .ihs ul.ihs-info {
+           position: absolute;
+           margin-left: 250px;
+           font-size: 16px; }
+           section.resume-workExperience .row .workExperience .ihs ul.ihs-info li {
+             padding: 5px 0; }
+           section.resume-workExperience .row .workExperience .ihs ul.ihs-info span {
+             border-bottom: 2px solid #47d1d1; }
+       section.resume-workExperience .row .workExperience .provalue {
+         margin-top: 50px;
+         position: relative;
+         width: 100%;
+         height: 200px; }
+         section.resume-workExperience .row .workExperience .provalue a {
+           position: absolute;
+           margin-left: 30px;
+           margin-top: 30px; }
+         section.resume-workExperience .row .workExperience .provalue ul.provalue-info {
+           position: absolute;
+           margin-left: 280px;
+           margin-top: 20px;
+           font-size: 16px; }
+           section.resume-workExperience .row .workExperience .provalue ul.provalue-info li {
+             padding: 5px 0; }
+ 
+ section.resume-projects {
+   margin-top: 50px; }
+   section.resume-projects .row {
+     height: 980px; }
+     section.resume-projects .row .projects {
+       padding-left: 50px;
+       padding-top: 50px; }
+       section.resume-projects .row .projects #accordion .panel {
+           /*#java{background:linear-gradient(to right, rgb(255, 153, 153), rgb(179, 224, 255));}
+           #c{background: linear-gradient(to right, rgba(0, 138, 230,0.6), rgb(204, 238, 255));}
+           #cs{background: linear-gradient(to right, rgba(191, 128, 255,0.5), rgb(230, 230, 255));}
+           #html{background: linear-gradient(to right, rgb(255, 187, 153), rgb(179, 224, 255));}
+           #js{background: linear-gradient(to right, rgb(255, 215, 128), rgb(255, 239, 204));}
+ */ }
+         section.resume-projects .row .projects #accordion .panel .panel-heading a {
+           text-decoration: none;
+           color: black; }
+           section.resume-projects .row .projects #accordion .panel .panel-heading a span {
+             float: right;
+             opacity: 0.6; }
+         section.resume-projects .row .projects #accordion .panel .panel-body {
+           position: relative; }
+           section.resume-projects .row .projects #accordion .panel .panel-body img {
+             opacity: 0.6;
+             float: right;
+             height: 200px;
+             width: auto; }
+           section.resume-projects .row .projects #accordion .panel .panel-body ul {
+             position: absolute; }
+             section.resume-projects .row .projects #accordion .panel .panel-body ul li {
+               padding: 5px 0;
+               font-size: 15px; }
+               section.resume-projects .row .projects #accordion .panel .panel-body ul li button {
+                 margin-left: 10px;
+                 font-size: 11px;
+                 padding: 5px; }
+     section.resume-projects .row .tool {
+       margin-top: 50px; }
+       section.resume-projects .row .tool table {
+         width: 100%;
+         margin-top: 20px;
+         margin-left: 30px; }
+         section.resume-projects .row .tool table tr td {
+           width: 30%;
+           padding: 5px; }
+           section.resume-projects .row .tool table tr td img {
+             height: 35px;
+             width: auto;
+             margin-right: 10px; }
+ 
+ section.resume-awards {
+   margin-top: 50px; }
+   section.resume-awards .row {
+     height: 1350px; }
+     section.resume-awards .row .awards {
+       padding-left: 120px;
+       padding-top: 50px; }
+       section.resume-awards .row .awards .outter {
+         height: 30px;
+         width: 30px;
+         border-radius: 100%;
+         background-color: #9dd0e1;
+         position: relative; }
+         section.resume-awards .row .awards .outter .inner {
+           height: 20px;
+           width: 20px;
+           border-radius: 100%;
+           background-color: white;
+           position: absolute;
+           top: 5px;
+           left: 5px;
+           cursor: pointer; }
+         section.resume-awards .row .awards .outter .inner.active {
+           background-color: rgba(0, 128, 0, 0.6);
+           opacity: 0.8;
+           transition: 0.7s; }
+         section.resume-awards .row .awards .outter .side {
+           width: 600px;
+           height: 150px;
+           background-color: rgba(0, 0, 0, 0.65);
+           margin-left: 100px;
+           color: white; }
+           section.resume-awards .row .awards .outter .side h4 {
+             margin: 0;
+             padding: 20px; }
+             section.resume-awards .row .awards .outter .side h4 a {
+               float: right; }
+               section.resume-awards .row .awards .outter .side h4 a button {
+                 font-size: 11px;
+                 padding: 5px; }
+           section.resume-awards .row .awards .outter .side li {
+             font-size: 15px; }
+         section.resume-awards .row .awards .outter .side.active {
+           box-shadow: 0 2px 8px #23adff; }
+       section.resume-awards .row .awards .rect {
+         width: 5px;
+         height: 150px;
+         background-color: #9dd0e1;
+         margin-left: 12px; }
+ 
+ section.resume-interests {
+   margin-top: 50px; }
+   section.resume-interests .row {
+     height: 870px; }
+     section.resume-interests .row .interests {
+       padding-left: 50px;
+       padding-top: 30px; }
+       section.resume-interests .row .interests .uwcssa {
+         position: relative;
+         width: 100%;
+         height: 300px; }
+         section.resume-interests .row .interests .uwcssa a {
+           position: absolute;
+           margin-left: 50px;
+           margin-top: 30px; }
+         section.resume-interests .row .interests .uwcssa ul.uwcssa-info {
+           margin-left: 250px;
+           margin-top: 25px;
+           font-size: 16px; }
+           section.resume-interests .row .interests .uwcssa ul.uwcssa-info li {
+             padding: 5px 0; }
+           section.resume-interests .row .interests .uwcssa ul.uwcssa-info span {
+             border-bottom: 2px solid #47d1d1; }
+       section.resume-interests .row .interests .others {
+         position: relative; }
+         section.resume-interests .row .interests .others a {
+           position: absolute;
+           margin-left: 50px;
+           margin-top: 30px; }
+           section.resume-interests .row .interests .others a img {
+             padding: 8px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+ 
+ section.gallery {
+   margin-top: 50px; }
+   section.gallery .row {
+     height: 870px; }
+     section.gallery .row .display {
+       padding-top: 100px; }
+       section.gallery .row .display .carousel-inner {
+         background-color: rgba(0, 0, 0, 0.65); }
+         section.gallery .row .display .carousel-inner .item {
+           padding: 55px 0; }
+           section.gallery .row .display .carousel-inner .item img {
+             margin: auto;
+             height: 300px; }
+ 
+ section.contactMe {
+   margin-top: 50px; }
+   section.contactMe .row {
+     height: 870px; }
+     section.contactMe .row .contact {
+       padding-top: 50px;
+       padding-left: 50px; }
+       section.contactMe .row .contact .contact-list {
+         position: relative;
+         height: 50px; }
+         section.contactMe .row .contact .contact-list a {
+           position: absolute; }
+           section.contactMe .row .contact .contact-list a img {
+             height: 40px; }
+       section.contactMe .row .contact .contact-form {
+         margin-top: 50px; }
+         section.contactMe .row .contact .contact-form form {
+           padding-top: 30px; }
+ 
+ /*# sourceMappingURL=stylesheet.css.map */
