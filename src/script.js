@@ -35,10 +35,29 @@ $(document).ready(function(){
 		$(this).prev().addClass("active");
 	});
 	//Google Map
+	/*
 	var mapCanvas = document.getElementById("map");
 	var mapOptions = {
 		center: new google.maps.LatLng(43.787133, -79.323335), zoom: 15
 	}
 	var map = new google.maps.Map(mapCanvas, mapOptions);
 	var src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD3v3u1V7FPExnsA8sbgkesVIF5yxB29M0&callback=initMap";
+	*/
+	window.onload = loadScript;
 });
+function initialize()
+{
+  var mapProp = {
+    center: new google.maps.LatLng(43.787133, -79.323335),
+    zoom:15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+function loadScript()
+{
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=&callback=initialize";
+  document.body.appendChild(script);
+}
