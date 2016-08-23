@@ -58,6 +58,6 @@ function loadScript()
 {
   var script = document.createElement("script");
   script.type = "text/javascript";
-  script.src = "http://maps.googleapis.com/maps/api/js?key=&callback=initialize";
+  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD3v3u1V7FPExnsA8sbgkesVIF5yxB29M0&callback=initMap";
   document.body.appendChild(script);
 }
