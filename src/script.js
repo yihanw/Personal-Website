@@ -8,10 +8,10 @@ $(document).ready(function(){
 	//Resume-education
 	$('.uw-course a').popover();
 	$('.2A').popover("show");
-    $('.uw-course a:not(.2A)').focus(function(){
+	$('.uw-course a:not(.2A)').focus(function(){
         $('.2A').popover("hide").removeClass("active");
 		$(this).addClass("active");
-    });
+    	});
 	$('.uw-course a:not(.2A)').blur(function(){
 		$('.2A').popover("show").addClass("active");
 		$(this).removeClass("active");
@@ -49,7 +49,7 @@ function initialize()
 {
   var mapProp = {
     center: new google.maps.LatLng(43.787133, -79.323335),
-    zoom:15,
+    zoom: 15,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
