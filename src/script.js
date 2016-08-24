@@ -35,6 +35,8 @@ $(document).ready(function(){
 		$(this).prev().addClass("active");
 	});
 });
+
+//Goole Map 
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
