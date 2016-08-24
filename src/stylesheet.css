@@ -155,7 +155,7 @@ section.resume-education {
           font-size: 16px; }
           section.resume-education .row .education .mac ul.mac-info li {
             padding: 5px 0; }
-        section.resume-education .row .education .mac #googleMap {
+        section.resume-education .row .education .mac #map {
           position: absolute;
           height: 300px;
           width: 300px;
