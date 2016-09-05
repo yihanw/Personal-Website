@@ -37,11 +37,24 @@ $(document).ready(function(){
 });
 
 //Goole Map 
-var map;
+/*var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 43.787133, lng: -79.323335},
     zoom: 15
-    mapTypeId:google.maps.MapTypeId.HYBRID
   });
+}*/
+var myCenter = new google.maps.LatLng(43.787133, -79.323335);
+
+function initMap()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:18,
+  mapTypeId:google.maps.MapTypeId.HYBRID
+  };
+
+var map=new google.maps.Map(document.getElementById("map"),mapProp);
 }
+
+google.maps.event.addDomListener(window, 'load', initMap);
