@@ -1,0 +1,502 @@
+//Variables
+$front-green: rgba(0, 204, 102, 0.5);
+$front-blue: rgba(0, 89, 179, 0.9);
+$bootstrap-black: rgba(0, 0, 0,0.935);
+$bootstrap-grey: #85857a;
+$sidenav: rgb(71, 209, 209);
+$award-blue: rgb(157, 208, 225);
+$hover-blue: rgba(35, 173, 278, 1);
+$faded-black: rgba(0, 0, 0,0.65);
+//font
+*{font-family: Helvetica, sans-serif;}//Malayalam MN
+//Navigation Bar
+nav.navbar{
+  .navbar-nav{
+    padding-right: 15px;
+    li{
+      .glyphicon{
+          padding-right: 8px;
+      }
+      .dropdown-menu{
+        background-color: $bootstrap-black;
+		li.current{
+			a{
+				color: white;
+			}
+		}
+        li{
+          a{
+            color: $bootstrap-grey;
+          }
+          a:hover{
+            background-color: transparent;
+            color: white;
+          }
+        }
+        li:hover{
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+//Footer
+footer{
+  .container-fluid{
+    .row{
+      height: 45px;
+      background-color: $bootstrap-black;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      .info{
+        color: $bootstrap-grey;
+      }
+      .nav-bottom{
+        .icon-bottom{
+          text-align: right;
+		  padding-right: 20px;
+          a{
+            .glyphicon{
+              color: $bootstrap-grey;
+              padding-left: 20px;
+              padding-right: 20px;
+              border-left: 1px solid $bootstrap-grey;
+              border-right: 1px solid $bootstrap-grey;
+            }
+			.glyphicon.active{
+			  color:white;
+			}
+            .glyphicon:hover{
+              color:white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Section-home
+section.home{
+  height: 920px;
+  margin-top: 50px;
+  background: linear-gradient(to bottom right, $front-green, $front-blue);
+  font-weight: 550;
+  opacity: 0.95;
+  .container{
+    .intro{
+      color: white;
+      font-size: 50px;
+      font-weight: 75%;
+      text-align: center;
+      padding-top: 350px;
+      padding-bottom: 50px;
+      display: none;
+    }
+	.but-group{
+	  text-align: center;
+    display: none;
+      .section-button{
+		display: inline-block;
+	    text-align:center;
+        background:linear-gradient(rgb(255, 102, 102),rgba(255, 102, 102,0.6));
+        border-radius:7px;
+        border: none;
+        padding:20px;
+        width:250px;
+		margin: 10px;
+        opacity: 0.9;
+        transition: 0.5s;
+        .home-but{
+          position: relative;
+          color:white;
+          text-align:center;
+          font-size:22px;
+          transition: 0.5s;
+          a{
+            text-decoration: none;
+            color: white;
+          }
+        }
+        .home-but:after{
+          //content: "\203A \203A";
+          content: ">>";
+          position:absolute;
+          opacity:0;
+          right:-20px;
+          transition:0.3s;
+        }
+      }
+      .section-button:hover .home-but{
+        padding-right:20px;
+      }
+      .section-button:hover .home-but:after{
+        opacity:1;
+      }
+    }
+  }
+}
+//Side Navbar
+.sidenav{
+	padding-top: 20px;
+	background-color: #f1f1f1;
+	height: 100%;
+	.sidenav-content{
+		list-style-type: none;
+		padding: 0;
+		text-align: center;
+		li{
+			padding: 12px 0;
+      font-size: 15px;
+      border-radius: 2px;
+			a{
+				color: black;
+				text-decoration: none;
+			}
+		}
+		li.active{
+			background-color: $sidenav;
+      opacity: 0.8;
+		}
+		li:hover{
+			background-color: $sidenav;
+      opacity: 0.8;
+			transition: 0.5s;
+		}
+	}
+}
+//Resume-education
+section.resume-education{
+	margin-top: 50px;
+	.row{
+		height: 1000px;
+		.education{
+			padding-left: 50px;
+			padding-top: 30px;
+			.waterloo{
+        div.top{
+          position:relative;
+          width: 100%;
+          height:200px;
+          a{
+            position: absolute;
+          }
+			ul.uw-info{
+            position: absolute;
+			      margin-left: 250px;
+            margin-top: 50px;
+            font-size: 16px;
+            li{padding: 5px 0px;}
+			}
+        }
+				.course{
+					height: 250px;
+					.uw-course{
+						a{
+							width: 60px;
+              //background-color:rgb(133, 224, 224);//rgba(23, 232, 204,0.6);
+						}
+						.popover{
+							z-index: 1;
+						}
+            .popover-title{
+              text-align: center;
+            }
+            .popover-content{
+              padding-top:5px 0;
+            }
+					}
+				}
+			}
+			.mac{
+        margin-top: 50px;
+        position: relative;
+        width: 100%;
+        height: 400px;
+				a{
+          position: absolute;
+          margin-left: 50px;
+          margin-top: 30px;
+        }
+				ul.mac-info{
+					position: absolute;
+          margin-left: 230px;
+          margin-top: 50px;
+          font-size: 16px;
+          li{padding: 5px 0;}
+				}
+				#map{
+					position: absolute;
+					height: 300px;
+					width: 300px;
+          margin-left: 550px;
+				}
+			}
+		}
+	}
+}
+//Resume-workExperience
+section.resume-workExperience{
+	margin-top: 50px;
+	.row{
+		height: 870px;
+		.workExperience{
+			padding-left: 50px;
+			padding-top: 30px;
+			.ihs{
+				position: relative;
+				width: 100%;
+				height: 350px;
+				a{
+					position: absolute;
+					margin-left: 50px;
+					margin-top: 30px;
+				}
+				ul.ihs-info{
+					position: absolute;
+					margin-left: 250px;
+          font-size: 16px;
+          li{padding: 5px 0;}
+          span{border-bottom: 2px solid $sidenav;}
+				}
+			}
+			.provalue{
+				margin-top: 50px;
+				position: relative;
+				width: 100%;
+				height: 200px;
+				a{
+					position: absolute;
+					margin-left: 30px;
+					margin-top: 30px;
+				}
+				ul.provalue-info{
+					position: absolute;
+					margin-left: 280px;
+          margin-top: 20px;
+          font-size: 16px;
+          li{padding: 5px 0;}
+				}
+			}
+		}
+	}
+}
+//Resume-projects
+section.resume-projects{
+	margin-top: 50px;
+	.row{
+		height:980px;
+		.projects{
+			padding-left: 50px;
+			padding-top: 50px;
+			#accordion{
+				.panel{
+					.panel-heading{
+						a{
+							text-decoration: none;
+							color: black;
+							span{
+								float: right;
+								opacity:0.6;
+							}
+						}
+					}
+          /*#java{background:linear-gradient(to right, rgb(255, 153, 153), rgb(179, 224, 255));}
+          #c{background: linear-gradient(to right, rgba(0, 138, 230,0.6), rgb(204, 238, 255));}
+          #cs{background: linear-gradient(to right, rgba(191, 128, 255,0.5), rgb(230, 230, 255));}
+          #html{background: linear-gradient(to right, rgb(255, 187, 153), rgb(179, 224, 255));}
+          #js{background: linear-gradient(to right, rgb(255, 215, 128), rgb(255, 239, 204));}
+*/
+          .panel-body{
+						position: relative;
+						img{
+							opacity: 0.6;
+							float: right;
+							height: 200px;
+							width: auto;
+						}
+						ul{
+							position: absolute;
+              li{
+                padding: 5px 0;
+                font-size: 15px;
+                button{
+                  margin-left: 10px;
+                  font-size:11px;
+                  padding: 5px;
+                }
+              }
+						}
+					}
+				}
+			}
+		}
+		.tool{
+			margin-top: 50px;
+			table{
+				width: 100%;
+				margin-top: 20px;
+        margin-left: 30px;
+				tr{
+					td{
+						width: 30%;
+						padding: 5px;
+            img{
+              height: 35px;
+              width: auto;
+              margin-right: 10px;
+            }
+					}
+				}
+			}
+		}
+	}
+}
+//Resume-awards
+section.resume-awards{
+  margin-top: 50px;
+  .row{
+    height: 1350px;
+    .awards{
+      padding-left: 120px;
+      padding-top: 50px;
+        .outter{
+          height: 30px;
+          width: 30px;
+          border-radius: 100%;
+          background-color: $award-blue;
+          position: relative;
+          .inner{
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            cursor: pointer;
+          }
+          .inner.active{
+            background-color: rgba(0, 128, 0,0.6);
+            opacity: 0.8;
+            transition: 0.7s;
+          }
+		  .side{
+			width: 600px;
+			height: 150px;
+			background-color:$faded-black;
+			margin-left: 100px;
+			color: white;
+			h4{
+				margin:0;
+				padding: 20px;
+        a{
+          float:right;
+          button{
+            font-size: 11px;
+            padding:5px;
+          }
+        }
+			}
+      li{font-size: 15px;}
+		  }
+		  .side.active{
+			box-shadow: 0 2px 8px $hover-blue;
+		  }
+        }
+
+      .rect{
+        width: 5px;
+        height: 150px;
+        background-color: $award-blue;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+//Resume-interests
+section.resume-interests{
+	margin-top: 50px;
+	.row{
+		height: 870px;
+		.interests{
+			padding-left: 50px;
+			padding-top: 30px;
+			.uwcssa{
+				position:relative;
+				width: 100%;
+				height: 300px;
+				a{
+					position: absolute;
+					margin-left: 50px;
+					margin-top: 30px;
+				}
+				ul.uwcssa-info{
+					margin-left: 250px;
+          margin-top: 25px;
+          font-size: 16px;
+          li{padding: 5px 0;}
+          span{border-bottom: 2px solid $sidenav;}
+				}
+			}
+			.others{
+				position: relative;
+				a{
+					position: absolute;
+					margin-left: 50px;
+					margin-top: 30px;
+					img{
+            padding: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          }
+				}
+			}
+		}
+	}
+}
+//Gallery
+section.gallery{
+  margin-top:50px;
+  .row{
+    height: 870px;
+    .display{
+      padding-top: 100px;
+      .carousel-inner{
+        background-color: $faded-black;
+        .item{
+          padding:55px 0;
+          img{
+            margin: auto;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+//Contact Me
+section.contactMe{
+  margin-top: 50px;
+  .row{
+    height: 870px;
+    .contact{
+      padding-top: 50px;
+      padding-left: 50px;
+      .contact-list{
+        position: relative;
+        height: 50px;
+        a{
+          position: absolute;
+          img{height: 40px;}
+        }
+      }
+      .contact-form{
+        margin-top: 50px;
+        form{
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+}
