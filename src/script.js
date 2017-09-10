@@ -7,13 +7,13 @@ $(document).ready(function(){
 	});
 	//Resume-education
 	$('.uw-course a').popover();
-	$('.2A').popover("show");
-	$('.uw-course a:not(.2A)').focus(function(){
-        $('.2A').popover("hide").removeClass("active");
+	$('.3A').popover("show");
+	$('.uw-course a:not(.3A)').focus(function(){
+        $('.3A').popover("hide").removeClass("active");
 		$(this).addClass("active");
     	});
-	$('.uw-course a:not(.2A)').blur(function(){
-		$('.2A').popover("show").addClass("active");
+	$('.uw-course a:not(.3A)').blur(function(){
+		$('.3A').popover("show").addClass("active");
 		$(this).removeClass("active");
 	});
 	//Resume-projects
